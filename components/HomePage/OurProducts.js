@@ -27,7 +27,7 @@ const OurProducts = () => {
                 </div>
             </article>
 
-            <article className='flex items-center w-full h-[400px] opacity-0 our-products mt-10 screen1020px:grid'>
+            <article className='flex items-center w-full h-auto mt-10 opacity-0 our-products screen1020px:grid'>
                 <div className='flex justify-center w-full h-full'>
                     <img src="./testing.jpg" alt="" className='h-[400px] screen1020px:w-full screen1020px:h-auto'/>
                 </div>
