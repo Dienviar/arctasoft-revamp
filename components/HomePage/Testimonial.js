@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdPersonPin } from 'react-icons/md'
+import TestimonialMessage from './TestimonialMessage'
 
 const Testimonial = () => {
+
+    useEffect(() => {
+        var myIndex = 0;
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slider");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 4000);
+        }
+        carousel();
+    }, [])
+    
+    
+
   return (
     <section className='flex justify-center w-full h-auto mt-52 screen800px:mt-36 screen420px:mt-20'>
         <div className='w-[1100px] h-auto px-5'>
@@ -12,27 +32,12 @@ const Testimonial = () => {
                 </div>
             </article>
 
-            <article className='flex items-center w-full h-auto'>
-                <div className='w-full h-[500px] flex justify-center items-center'>
-                    <div className='w-[700px] h-auto bg-white rounded-xl shadow-md px-3 py-5'>
-                        <div className='flex items-center justify-center w-full h-20'>
-                            <MdPersonPin className='w-16 h-16 text-gray-400'/>
-                        </div>
-
-                        <div className='w-full h-auto text-center'>
-                            <p className='text-xl font-semibold text-pal_blue'>Maria Cruz Santos</p>
-                            <p className='text-base text-gray-400'>Co-Chairman and Co-Founder</p>
-                            <p className='text-base font-semibold text-pal_blue'>Company Name</p>
-                        </div>
-
-                        <div className='w-full h-auto mt-10 text-left'>
-                            <p className='text-base text-black'>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            <div>
+                <TestimonialMessage name="Maria Cruz Santos" position="Co-Chairman and Co-Founder"/>
+                <TestimonialMessage name="Denver Dannel" position="Founder"/>
+                <TestimonialMessage name="Maria Clarise" position="Co-Founder"/>
+                <TestimonialMessage name="Micah Austria" position="President"/>
+            </div>
         </div>
     </section>
   )
