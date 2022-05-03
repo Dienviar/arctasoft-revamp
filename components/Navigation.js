@@ -51,11 +51,11 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
     }
 
     const changeNavLinkToActive = (ref) => {
-        ref.current.style.color = "#017f7f"     
+        ref.current.style.color = "black"     
     }
 
     const changeNavLinkToInactive = (ref) => {
-        ref.current.style.color = "black"       
+        ref.current.style.color = "#017f7f"       
     }
 
     const checkIfOnViewPort = (divRef, NavRef) => {
