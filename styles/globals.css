@@ -207,9 +207,11 @@ body {
   transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
 }
 
+/* Responsive */
+
 @media screen and (max-width: 1020px) {
   #orbit-bx {
-    margin-top: -60px;
+    margin-top: -20px;
     transform: scale(1.5);
   }
 }
@@ -236,6 +238,7 @@ body {
 
 @media screen and (max-width: 370px) {
   #orbit-bx {
+    margin-top: 50px;
     margin-left: 45px;
     transform: scale(.7);
   }

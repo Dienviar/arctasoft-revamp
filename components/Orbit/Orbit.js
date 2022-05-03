@@ -53,7 +53,7 @@ const Orbit = () => {
                     <img src='./Orbit/react.png' className='orbit-object orbit13-object1' alt="React Icon" />
                 </div>
 
-                <div class="orbit-main orbit3 show12 orbit13-main2">
+                <div className="orbit-main orbit3 show12 orbit13-main2">
                     <img src='./Orbit/angular.png' className='orbit-object orbit13-object2' alt="Angular Icon" />
                 </div>
 

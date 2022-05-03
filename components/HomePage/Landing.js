@@ -3,7 +3,7 @@ import Orbit from '../Orbit/Orbit'
 
 const Landing = () => {
   return (
-    <section className='flex items-center justify-center w-full h-auto screen420px:mt-10'>
+    <section className='flex items-center justify-center w-full h-auto screen420px:mt-10 screen450px:-mb-20 screen600px:mb-20'>
         <div className='w-[1100px] h-[500px] flex justify-center px-5 mt-16 screen1020px:grid screen1020px:h-auto screen1020px:mt-0'>
             <article className='flex justify-center items-center w-full h-[500px]'>
                 <div className='w-full h-auto'>
@@ -25,7 +25,7 @@ const Landing = () => {
                 </div>
             </article>
 
-            <article className='relative flex justify-center w-full h-[500px] items-center screen550px:h-[400px] screen500px:h-[300px]'>
+            <article id="orbit-comp" className='relative flex justify-center w-full h-[500px] items-center screen600px:h-[400px]'>
                 <Orbit/>
             </article>
         </div>
