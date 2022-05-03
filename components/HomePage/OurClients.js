@@ -107,20 +107,20 @@ const OurClients = () => {
 
             <article className='flex items-center justify-center w-full h-auto mt-10 screen850px:flex-wrap'>
                 <div className='w-[150px] h-[350px] mx-1 flex justify-center items-center screen420px:w-[90px] screen420px:h-[300px]'>
-                    <div className='client1 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                    <div className='client1 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                         <img src="./OurClients/gcash.png" alt="Gcash" className='w-full h-auto' />
                     </div>
                 </div>
 
                 <div className='w-[150px] h-[350px] mx-2 screen420px:w-[90px] screen420px:h-[300px]'>
                     <div className='w-full h-[175px] flex justify-center items-end mb-3'>
-                        <div className='client2 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                        <div className='client2 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                             <img src="./OurClients/smart.png" alt="Gcash" className='w-full h-auto' />
                         </div>
                     </div>
                     
                     <div className='w-full h-[175px] flex justify-center items-start mt-3'>
-                        <div className='client3 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                        <div className='client3 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                             <img src="./OurClients/bdo.png" alt="BDO" className='w-full h-auto' />
                         </div>
                     </div>
@@ -129,7 +129,7 @@ const OurClients = () => {
                 <div className='w-[150px] h-[350px] mx-2 screen420px:w-[90px] screen420px:h-[300px]'>
                     <div className='w-full h-[117px] flex justify-center items-center'>
                         <div className='w-full h-[100px]'>
-                            <div className='client4 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                            <div className='client4 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                                 <img src="./OurClients/pldt.png" alt="PLDT" className='w-full h-auto' />
                             </div> 
                         </div>
@@ -137,7 +137,7 @@ const OurClients = () => {
                     
                     <div className='w-full h-[117px] flex justify-center items-center'>
                         <div className='w-full h-[100px]'>
-                            <div className='client5 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                            <div className='client5 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                                 <img src="./OurClients/puregold.png" alt="PureGold" className='w-full h-auto' />
                             </div> 
                         </div>
@@ -145,7 +145,7 @@ const OurClients = () => {
 
                     <div className='w-full h-[117px] flex justify-center items-center'>
                         <div className='w-full h-[100px]'>
-                            <div className='client6 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                            <div className='client6 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                                 <img src="./OurClients/mercurydrug.png" alt="Mercury Drug" className='w-full h-auto' />
                             </div> 
                         </div>
@@ -154,20 +154,20 @@ const OurClients = () => {
 
                <div className='w-[150px] h-[350px] mx-2 screen420px:w-[90px] screen420px:h-[300px]'>
                     <div className='w-full h-[175px] flex justify-center items-end mb-3'>
-                        <div className='client7 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                        <div className='client7 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                             <img src="./OurClients/starbucks.png" alt="StarBucks" className='w-full h-auto' />
                         </div>
                     </div>
                     
                     <div className='w-full h-[175px] flex justify-center items-start mt-3'>
-                        <div className='client8 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                        <div className='client8 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                             <img src="./OurClients/711.png" alt="711" className='w-full h-auto' />
                         </div>
                     </div>
                 </div>
 
                 <div className='w-[150px] h-[350px] mx-2 flex justify-center items-center screen420px:w-[90px] screen420px:h-[300px]'>
-                    <div className='client9 w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
+                    <div className='client9 rounded-md w-full h-[100px] bg-white bg-gree-500 shadow-md flex justify-center items-center p-2 rotateY_150deg'>
                         <img src="./OurClients/jollibee.png" alt="Jollibee" className='w-full h-auto' />
                     </div>
                 </div>
