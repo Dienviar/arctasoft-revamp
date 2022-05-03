@@ -3,7 +3,7 @@ import React from 'react'
 const Orbit = () => {
   return (
     <div className='flex items-center justify-center w-auto h-auto bg-red-500'>
-        <div id="orbit-bx" className='ml-20 mt-28'>
+        <div id="orbit-bx" className='ml-20 screen1020px:ml-16 screen1020px:-mt-20 screen650px:-mt-10'>
             <div className="orbit-system">
                 <div className="orbit-main orbit1 ">
                     <img src='./Orbit/tailwindcss.png' className='orbit-object' alt="Tailwind CSS Icon" />
