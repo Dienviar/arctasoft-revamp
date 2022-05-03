@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { MdPersonPin } from 'react-icons/md'
 import TestimonialMessage from './TestimonialMessage'
 
 const Testimonial = () => {
