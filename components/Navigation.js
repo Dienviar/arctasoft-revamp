@@ -1,12 +1,99 @@
-import React from 'react'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
+import React, { useEffect, useRef } from 'react'
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { homeRef } from './HomePage/Landing';
 
-const Navigation = () => {
+const Navigation = ({homeRef, productsRef, servicesRef, clientsRef}) => {
+    const home = useRef()
+    const products = useRef()
+    const services = useRef()
+    const clients = useRef()
+    const aboutus = useRef()
 
-    const { pathname } = useRouter()
+
+// function elementInViewport(el) {
+//   var top = el.offsetTop;
+//   var left = el.offsetLeft;
+//   var width = el.offsetWidth;
+//   var height = el.offsetHeight;
+
+//   while(el.offsetParent) {
+//     el = el.offsetParent;
+//     top += el.offsetTop;
+//     left += el.offsetLeft;
+//   }
+
+//   return (
+//     top >= window.pageYOffset &&
+//     left >= window.pageXOffset &&
+//     (top + height) <= (window.pageYOffset + window.innerHeight) &&
+//     (left + width) <= (window.pageXOffset + window.innerWidth)
+//   );
+// }
+
+    const elementInViewport = (el) => {
+        var top = el.offsetTop;
+        var left = el.offsetLeft;
+        var width = el.offsetWidth;
+        var height = el.offsetHeight;
+
+        while(el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+        }
+
+        return (
+            top < (window.pageYOffset + window.innerHeight) &&
+            left < (window.pageXOffset + window.innerWidth) &&
+            (top + height) > window.pageYOffset &&
+            (left + width) > window.pageXOffset
+        );
+    }
+
+    const changeNavLinkToActive = (ref) => {
+        ref.current.style.color = "black"
+        ref.current.style.cursor = "pointer"       
+    }
+
+    const changeNavLinkToInactive = (ref) => {
+        ref.current.style.color = "#017f7f"
+        ref.current.style.cursor = "default"        
+    }
+
+    const checkIfOnViewPort = (divRef, NavRef) => {
+        if(elementInViewport(divRef.current)){
+            changeNavLinkToInactive(NavRef)
+            return true
+        }
+        changeNavLinkToActive(NavRef)
+        return false
+    }
+
+    useEffect(() => {
+        window.onscroll = () => {
+            checkIfOnViewPort(homeRef, home)
+            checkIfOnViewPort(productsRef, products)
+            checkIfOnViewPort(servicesRef, services)
+            checkIfOnViewPort(clientsRef, clients)
+        }
+    }, [])
+    
+    const goHome = () => {
+        homeRef.current.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+    }
+
+    const goProducts = () => {
+        productsRef.current.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+    }
+
+    const goServices = () => {
+        servicesRef.current.scrollIntoView({behavior: "smooth", block: "center", inline: "start"})
+    }
+    
+    const goClients = () => {
+        clientsRef.current.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"})
+    }
 
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-center w-full h-20 bg-white shadow-md'>  
@@ -18,25 +105,29 @@ const Navigation = () => {
 
             <section className='absolute flex items-center w-auto h-full right-5 screen1000px:hidden'>
                 <ul className='flex items-center'>
-                    <li className={`${pathname == "/" ? 'text-pal_green' : 'text-black'} mx-5 duration-300 hover:text-pal_green text-lg`}>
-                        <Link href="/">Home</Link>
+                    <li onClick={goHome} ref={home} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                        Home
                     </li>
 
-                    <li className={`${pathname == "/products" ? 'text-pal_green' : 'text-black'} mx-5 duration-300 hover:text-pal_green text-lg`}>
-                        <Link href="/">Products</Link>
+                    <li onClick={goProducts} ref={products} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                        Products
                     </li>
 
-                    <li className={`${pathname == "/services" ? 'text-pal_green' : 'text-black'} mx-5 duration-300 hover:text-pal_green text-lg`}>
-                        <Link href="/">Services</Link>
+
+                    <li onClick={goServices} ref={services} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                        Services
                     </li>
 
-                    <li className={`${pathname == "/clients" ? 'text-pal_green' : 'text-black'} mx-5 duration-300 hover:text-pal_green text-lg`}>
-                        <Link href="/">Clients</Link>
+
+                     <li onClick={goClients} ref={clients} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                        Clients
                     </li>
 
-                    <li className={`${pathname == "/aboutus" ? 'text-pal_green' : 'text-black'} mx-5 duration-300 hover:text-pal_green text-lg`}>
-                        <Link href="/">About Us</Link>
+
+                    <li ref={aboutus} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                        About Us
                     </li>
+
 
                     <li>
                         <Button variant="contained" style={{ backgroundColor : "#017f7f" }}>Contact Us</Button>
