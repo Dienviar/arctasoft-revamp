@@ -31,7 +31,7 @@ const Testimonial = () => {
                 </div>
             </article>
 
-            <div>
+            <div className='screen420px:mt-16'>
                 <TestimonialMessage name="Maria Cruz Santos" position="Co-Chairman and Co-Founder"/>
                 <TestimonialMessage name="Denver Dannel" position="Founder"/>
                 <TestimonialMessage name="Maria Clarise" position="Co-Founder"/>
