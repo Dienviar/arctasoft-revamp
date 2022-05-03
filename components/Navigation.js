@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { homeRef } from './HomePage/Landing';
 
-const Navigation = ({homeRef, productsRef, servicesRef, clientsRef}) => {
+const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef}) => {
     const home = useRef()
     const products = useRef()
     const services = useRef()
@@ -95,6 +95,10 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef}) => {
         clientsRef.current.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"})
     }
 
+    const goAboutUs = () => {
+        aboutUsRef.current.scrollIntoView({behavior: "smooth", block: "nearest", inline: "start"})
+    }
+
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-center w-full h-20 bg-white shadow-md'>  
         <div className='relative w-[1200px] h-full'>
@@ -124,7 +128,7 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef}) => {
                     </li>
 
 
-                    <li ref={aboutus} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                    <li onClick={goAboutUs} ref={aboutus} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
                         About Us
                     </li>
 

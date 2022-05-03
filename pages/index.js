@@ -6,6 +6,7 @@ import OurProducts from '../components/HomePage/OurProducts'
 import OurServices from '../components/HomePage/OurServices'
 import OurClients from '../components/HomePage/OurClients'
 import Testimonial from '../components/HomePage/Testimonial'
+import AboutUs from '../components/HomePage/AboutUs'
 import { useRef } from 'react'
 import Navigation from '../components/Navigation'
 
@@ -15,10 +16,11 @@ export default function Home() {
   const productsRef = useRef()
   const servicesRef = useRef()
   const clientsRef = useRef()
+  const aboutUsRef = useRef()
 
   return (
     <>
-      <Navigation homeRef={homeRef} productsRef={productsRef} servicesRef={servicesRef} clientsRef={clientsRef}/>
+      <Navigation homeRef={homeRef} productsRef={productsRef} servicesRef={servicesRef} clientsRef={clientsRef} aboutUsRef={aboutUsRef}/>
       <main className='w-full h-auto'>
         <div ref={homeRef}><Landing /></div>
         <div ref={productsRef}><OurProducts/></div>
@@ -27,6 +29,7 @@ export default function Home() {
           <OurClients/>
           <Testimonial/>
         </div>
+        <div ref={aboutUsRef}><AboutUs/></div>
       </main>    
     </>
   )
