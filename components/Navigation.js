@@ -51,11 +51,11 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
     }
 
     const changeNavLinkToActive = (ref) => {
-        ref.current.style.color = "black"     
+        ref.current.style.color = "#017f7f"     
     }
 
     const changeNavLinkToInactive = (ref) => {
-        ref.current.style.color = "#017f7f"       
+        ref.current.style.color = "black"       
     }
 
     const checkIfOnViewPort = (divRef, NavRef) => {
@@ -68,7 +68,7 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
     }
 
     useEffect(() => {
-        window.onscroll = () => {
+        window.addEventListener('scroll', () => {
             if(checkIfOnViewPort(homeRef, home)){
                 document.title = "Home"
                 return
@@ -89,7 +89,7 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
                 document.title = "About Us"
                 return
             }   
-        }
+        })
     }, [])
     
     const goHome = () => {

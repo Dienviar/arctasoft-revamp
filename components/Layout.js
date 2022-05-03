@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
   const [showToTop, setShowToTop] = useState(false)
 
   useEffect(() => {
-    window.onscroll = () => {
+   window.addEventListener('scroll', () => {
       let scroll =  window.pageYOffset
 
       if(scroll > 0) {
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
       else{
         setShowToTop(false)
       }
-    }
+    })
   }, [])
   
 
