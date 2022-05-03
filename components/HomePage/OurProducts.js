@@ -14,12 +14,62 @@ const OurProducts = () => {
                 start: "30% bottom"
             }
         })
+
+        gsap.to(".span1" ,{
+            opacity: 1,
+            duration: 2,
+            delay: .5,
+            scrollTrigger: {
+                trigger: ".span1",
+                start: "30% bottom"
+            }
+        }) 
+        
+        gsap.to(".span2" ,{
+            opacity: 1,
+            duration: 2,
+            delay: 1.5,
+            scrollTrigger: {
+                trigger: ".span2",
+                start: "30% bottom"
+            }
+        })  
+
+        gsap.to(".span3" ,{
+            opacity: 1,
+            duration: 2,
+            delay: 1,
+            scrollTrigger: {
+                trigger: ".span3",
+                start: "30% bottom"
+            }
+        })  
+
+
+        gsap.to(".span4" ,{
+            opacity: 1,
+            duration: 2,
+            scrollTrigger: {
+                trigger: ".span4",
+                start: "30% bottom"
+            }
+        })  
     }, [])
     
 
   return (
     <section className='flex justify-center w-full h-auto mt-48 screen800px:mt-36 screen420px:mt-20'>
         <div className='w-[1100px] h-auto px-5'>
+            <article className='flex items-center justify-center w-full h-20 text-center mb-52 screen900px:mt-20'>
+                <p className='text-6xl font-bold text-pal_blue screen900px:text-4xl'>
+                    <span className='opacity-0 span1'>Building </span> 
+                    <span className='opacity-0 span2'>scalable </span> 
+                    <span className='opacity-0 span3 text-pal_green'>solutions </span> 
+                    that transform 
+                    <span className='opacity-0 span4'> business</span>
+                </p>
+            </article>
+
             <article className='flex items-center justify-center w-full h-20 '>
                 <div className='w-auto h-auto text-center'>
                     <p className='text-4xl font-bold text-pal_blue'>Our Products</p>
