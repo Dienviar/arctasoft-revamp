@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '@mui/material/Button';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const ContactUs = () => {
+
+    useEffect(() => {
+        gsap.to(".contactus", {
+            marginLeft: 0,
+            duration: 2,
+            scrollTrigger: {
+                trigger: ".contactus",
+                start: "30% bottom"
+            }
+        })
+    }, [])
+
   return (
-   <section className='flex justify-center w-full h-auto mt-20'>
-        <div className='w-[1100px] h-auto px-5'>
+   <section className='relative flex justify-center w-full h-auto mt-20'>
+        <div className='contactus w-[1100px] h-auto px-5 -ml-[200%]'>
             {/* <article className='flex items-center justify-center w-full h-20 '>
                 <div className='w-auto h-auto text-center'>
                     <p className='text-4xl font-bold text-pal_blue'>About Us</p>

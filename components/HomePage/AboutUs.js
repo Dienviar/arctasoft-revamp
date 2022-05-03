@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AiOutlineEye } from 'react-icons/ai'
 import { BsFlag } from 'react-icons/bs'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 const AboutUs = () => {
+
+    useEffect(() => {
+        gsap.to(".vmssion", {
+            rotateY: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: ".vmssion",
+                start: "30% bottom"
+            }
+        })
+    }, [])
+    
+
   return (
     <section className='flex justify-center w-full h-auto mt-48 screen800px:mt-36 screen420px:mt-20'>
         <div className='w-[1100px] h-auto px-5'>
@@ -22,7 +38,7 @@ const AboutUs = () => {
             </article>
 
             <article className='flex items-center w-full h-auto mt-10 our-products screen750px:grid'>
-                <div className='w-full h-[300px] flex justify-center items-center px-2'>
+                <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 rotateY_150deg'>
                     <div className='w-full h-auto bg-[rgb(0,128,128,0.1)] rounded-xl'>
                         <div className='flex items-center justify-center w-full h-20'>
                             <AiOutlineEye className='w-16 h-16 text-pal_green'/> 
@@ -37,7 +53,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 
-               <div className='w-full h-[300px] flex justify-center items-center px-2 screen750px:-mt-10'>
+               <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 screen750px:-mt-10 rotateY_150deg'>
                     <div className='w-full h-auto bg-[rgb(0,128,128,0.1)] rounded-xl'>
                         <div className='flex items-center justify-center w-full h-20'>
                             <BsFlag className='w-14 h-14 text-pal_green'/> 
