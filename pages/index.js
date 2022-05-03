@@ -7,6 +7,7 @@ import OurServices from '../components/HomePage/OurServices'
 import OurClients from '../components/HomePage/OurClients'
 import Testimonial from '../components/HomePage/Testimonial'
 import AboutUs from '../components/HomePage/AboutUs'
+import ContactUs from '../components/HomePage/ContactUs'
 import { useRef } from 'react'
 import Navigation from '../components/Navigation'
 
@@ -30,6 +31,7 @@ export default function Home() {
           <Testimonial/>
         </div>
         <div ref={aboutUsRef}><AboutUs/></div>
+        <ContactUs/>
       </main>    
     </>
   )

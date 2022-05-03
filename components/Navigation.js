@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Button from '@mui/material/Button';
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { homeRef } from './HomePage/Landing';
 
 const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef}) => {
     const home = useRef()
@@ -52,13 +51,11 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
     }
 
     const changeNavLinkToActive = (ref) => {
-        ref.current.style.color = "black"
-        ref.current.style.cursor = "pointer"       
+        ref.current.style.color = "black"     
     }
 
     const changeNavLinkToInactive = (ref) => {
-        ref.current.style.color = "#017f7f"
-        ref.current.style.cursor = "default"        
+        ref.current.style.color = "#017f7f"       
     }
 
     const checkIfOnViewPort = (divRef, NavRef) => {
@@ -76,6 +73,7 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
             checkIfOnViewPort(productsRef, products)
             checkIfOnViewPort(servicesRef, services)
             checkIfOnViewPort(clientsRef, clients)
+            checkIfOnViewPort(aboutUsRef, aboutus)
         }
     }, [])
     
@@ -108,27 +106,27 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
             </section>
 
             <section className='absolute flex items-center w-auto h-full right-5 screen1000px:hidden'>
-                <ul className='flex items-center'>
-                    <li onClick={goHome} ref={home} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                <ul className='flex items-center select-none'>
+                    <li onClick={goHome} ref={home} className='mx-5 text-lg text-black duration-300 cursor-pointer hover:text-pal_green'>
                         Home
                     </li>
 
-                    <li onClick={goProducts} ref={products} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                    <li onClick={goProducts} ref={products} className='mx-5 text-lg text-black duration-300 cursor-pointer hover:text-pal_green'>
                         Products
                     </li>
 
 
-                    <li onClick={goServices} ref={services} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                    <li onClick={goServices} ref={services} className='mx-5 text-lg text-black duration-300 cursor-pointer hover:text-pal_green'>
                         Services
                     </li>
 
 
-                     <li onClick={goClients} ref={clients} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                     <li onClick={goClients} ref={clients} className='mx-5 text-lg text-black duration-300 cursor-pointer hover:text-pal_green'>
                         Clients
                     </li>
 
 
-                    <li onClick={goAboutUs} ref={aboutus} className='mx-5 text-lg text-black duration-300 hover:text-pal_green'>
+                    <li onClick={goAboutUs} ref={aboutus} className='mx-5 text-lg text-black duration-300 cursor-pointer hover:text-pal_green'>
                         About Us
                     </li>
 
