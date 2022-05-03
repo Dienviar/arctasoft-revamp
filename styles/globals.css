@@ -267,17 +267,17 @@ body {
 
 .slider{
   position: relative;
-  animation: animatetop 0.4s
+  animation: animateleft 0.4s
 }
 
-@keyframes animatetop {
+@keyframes animateleft {
   from {
-    top: -300px;
+    left: -300px;
     opacity: 0
   }
 
   to {
-    top: 0;
+    left: 0;
     opacity: 1
   }
 }

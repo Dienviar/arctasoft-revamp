@@ -9,7 +9,7 @@ const Navigation = () => {
     const { pathname } = useRouter()
 
   return (
-    <nav className='flex items-center justify-center w-full h-20 bg-white shadow-md'>  
+    <nav className='sticky top-0 z-50 flex items-center justify-center w-full h-20 bg-white shadow-md'>  
         <div className='relative w-[1200px] h-full'>
             <section className='absolute left-0 w-auto h-full screen600px:left-5'>
                 <img src="./Logo/logo.png" alt="Arctasoft Logo" className='w-full h-full py-1 screen600px:hidden' />
