@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,188 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+#orbit-bx {
+  position: absolute;
+  width: 18em;
+  height: 18em;
+  top: 0px;
+}
+
+.orbit-system {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  -webkit-transform: rotateX(75deg) rotateY(-30deg);
+  transform: rotateX(75deg) rotateY(-30deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.orbit-main,
+.orbit-object {
+  position: absolute;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.orbit1 {
+  left: 90px;
+  width: 10em;
+  height: 10em;
+}
+
+.orbit2 {
+  top: -700px;
+  left: 100px;
+  width: 16em;
+  height: 16em;
+}
+
+.orbit3 {
+  top: -1300px;
+  left: 220px;
+  width: 10em;
+  height: 10em;
+}
+
+
+.orbit-main {
+
+  margin-top: -8em;
+  margin-left: -8em;
+
+  animation-name: orbit;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+.orbit-object {
+  top: 100%;
+  width: 3em;
+  height: 3em;
+
+  animation-name: invert-orbit;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: rotateZ(-360deg);
+  opacity: 0;
+  transition: .2s;
+}
+
+@keyframes invert-orbit {
+  0% {
+    transform: rotateZ(-360deg) rotateY(30deg) rotateX(-75deg);
+    opacity: 1;
+  }
+
+  70% {
+    opacity: .3;
+  }
+
+  90% {
+    opacity: .7;
+  }
+
+  100% {
+    transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+    opacity: 1;
+  }
+}
+
+
+/* Orbit2 */
+.orbit2-main1 {
+  animation-delay: 2s;
+}
+
+.orbit2-main2 {
+  animation-delay: 4s;
+}
+
+.orbit2-main3 {
+  animation-delay: 6s;
+}
+
+.orbit2-main4 {
+  animation-delay: 8s;
+}
+
+.orbit2-object1 {
+  animation-delay: 2s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+.orbit2-object2 {
+  animation-delay: 4s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+.orbit2-object3 {
+  animation-delay: 6s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+.orbit2-object4 {
+  animation-delay: 8s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Orbit 1 and 2 */
+
+.orbit13-main1 {
+  animation-delay: 3S;
+}
+
+.orbit13-main2 {
+  animation-delay: 5s;
+}
+
+.orbit13-main3 {
+  animation-delay: 7s;
+}
+
+.orbit13-object1 {
+  animation-delay: 3s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+.orbit13-object2 {
+  animation-delay: 5s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
+}
+
+.orbit13-object3 {
+  animation-delay: 7s;
+  transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
 }
