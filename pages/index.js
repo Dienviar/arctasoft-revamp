@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Orbit from '../components/Orbit/Orbit'
+import Landing from '../components/HomePage/Landing'
 
 export default function Home() {
   return (
-    <div className='w-full h-auto'>
-      {/* <Orbit/> */}
-    </div>
+    <main className='w-full h-auto'>
+      <Landing/>
+    </main>
   )
 }

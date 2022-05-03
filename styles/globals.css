@@ -118,19 +118,23 @@ body {
   0% {
     transform: rotateZ(-360deg) rotateY(30deg) rotateX(-75deg);
     opacity: 1;
+    z-index: 10;
   }
 
-  70% {
+  80% {
     opacity: .3;
+    z-index: -10;
   }
 
-  90% {
+  85% {
     opacity: .7;
+    z-index: -10;
   }
 
   100% {
     transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
     opacity: 1;
+    z-index: 10;
   }
 }
 

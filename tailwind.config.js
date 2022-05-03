@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pal_green' : "#017f7f"
+        'pal_green' : "#017f7f",
+        'pal_blue' : '#003152',
       }
     },
     screens: {
