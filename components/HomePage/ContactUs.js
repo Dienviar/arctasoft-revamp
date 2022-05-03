@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 const ContactUs = () => {
   return (
-   <section className='flex justify-center w-full h-auto mt-48 screen800px:mt-36 screen420px:mt-20'>
+   <section className='flex justify-center w-full h-auto mt-20'>
         <div className='w-[1100px] h-auto px-5'>
             {/* <article className='flex items-center justify-center w-full h-20 '>
                 <div className='w-auto h-auto text-center'>
