@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Landing from '../components/HomePage/Landing'
 import OurProducts from '../components/HomePage/OurProducts'
 import OurServices from '../components/HomePage/OurServices'
+import OurClients from '../components/HomePage/OurClients'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Landing/>
       <OurProducts/>
       <OurServices/>
+      <OurClients/>
     </main>
   )
 }
