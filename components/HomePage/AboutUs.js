@@ -38,7 +38,7 @@ const AboutUs = () => {
             </article>
 
             <article className='flex items-center w-full h-auto mt-10 our-products screen750px:grid'>
-                <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 rotateY_150deg'>
+                <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 rotateY_150deg screen750px:h-auto'>
                     <div className='w-full h-auto bg-[rgb(0,128,128,0.1)] rounded-xl'>
                         <div className='flex items-center justify-center w-full h-20'>
                             <AiOutlineEye className='w-16 h-16 text-pal_green'/> 
@@ -53,7 +53,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 
-               <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 screen750px:-mt-10 rotateY_150deg'>
+               <div className='vmssion w-full h-[300px] flex justify-center items-center px-2 screen750px:mt-5 rotateY_150deg screen750px:h-auto'>
                     <div className='w-full h-auto bg-[rgb(0,128,128,0.1)] rounded-xl'>
                         <div className='flex items-center justify-center w-full h-20'>
                             <BsFlag className='w-14 h-14 text-pal_green'/> 
