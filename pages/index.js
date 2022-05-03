@@ -5,6 +5,7 @@ import Landing from '../components/HomePage/Landing'
 import OurProducts from '../components/HomePage/OurProducts'
 import OurServices from '../components/HomePage/OurServices'
 import OurClients from '../components/HomePage/OurClients'
+import Testimonial from '../components/HomePage/Testimonial'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <OurProducts/>
       <OurServices/>
       <OurClients/>
+      <Testimonial/>
     </main>
   )
 }

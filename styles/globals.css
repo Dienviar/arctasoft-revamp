@@ -260,3 +260,7 @@ body {
     border-right: 0px;
   }
 }
+
+.rotateY_150deg{
+  transform: rotateY(150deg);
+}
