@@ -102,8 +102,8 @@ body {
 
 .orbit-object {
   top: 100%;
-  width: 3em;
-  height: 3em;
+  width: 4em;
+  height: 4em;
 
   animation-name: invert-orbit;
   animation-duration: 10s;
@@ -181,15 +181,15 @@ body {
 /* Orbit 1 and 2 */
 
 .orbit13-main1 {
-  animation-delay: 3S;
+  animation-delay: 3s;
 }
 
 .orbit13-main2 {
-  animation-delay: 5s;
+  animation-delay: 6s;
 }
 
 .orbit13-main3 {
-  animation-delay: 7s;
+  animation-delay: 9s;
 }
 
 .orbit13-object1 {
@@ -198,12 +198,12 @@ body {
 }
 
 .orbit13-object2 {
-  animation-delay: 5s;
+  animation-delay: 6s;
   transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
 }
 
 .orbit13-object3 {
-  animation-delay: 7s;
+  animation-delay: 9s;
   transform: rotateZ(0deg) rotateY(30deg) rotateX(-75deg);
 }
 

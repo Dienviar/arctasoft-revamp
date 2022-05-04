@@ -70,23 +70,18 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
     useEffect(() => {
         window.addEventListener('scroll', () => {
             if(checkIfOnViewPort(homeRef, home)){
-                document.title = "Home"
                 return
             }
             else if(checkIfOnViewPort(productsRef, products)){
-                document.title = "Products"
                 return
             }
             else if(checkIfOnViewPort(servicesRef, services)){
-                document.title = "Services"
                 return
             }
             else if(checkIfOnViewPort(clientsRef, clients)){
-                document.title = "Clients"
                 return
             }
             else if(checkIfOnViewPort(aboutUsRef, aboutus)){
-                document.title = "About Us"
                 return
             }   
         })

@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <link rel="shortcut icon" href="./favicon.ico" />
+        <title>Arctasoft</title>
       </Head>
       <Component {...pageProps} />
     </Layout>
