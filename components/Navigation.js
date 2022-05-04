@@ -109,7 +109,7 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
 
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-center w-full h-20 bg-white shadow-md'>  
-        <div className='relative w-[1200px] h-full'>
+        <div className='relative w-full h-full'>
             <section className='absolute left-0 w-auto h-full flex justify-center items-center'>
                 <img src="./Logo/logo.png" alt="Arctasoft Logo" className='w-full h-full px-5 py-1 screen600px:h-4/5 screen600px:px-4' />
             </section>
