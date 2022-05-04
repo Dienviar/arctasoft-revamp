@@ -110,9 +110,8 @@ const Navigation = ({homeRef, productsRef, servicesRef, clientsRef, aboutUsRef})
   return (
     <nav className='sticky top-0 z-50 flex items-center justify-center w-full h-20 bg-white shadow-md'>  
         <div className='relative w-[1200px] h-full'>
-            <section className='absolute left-0 w-auto h-full screen600px:left-5'>
-                <img src="./Logo/logo.png" alt="Arctasoft Logo" className='w-full h-full py-1 screen600px:hidden' />
-                <img src="./Logo/icon.png" alt="Arctasoft Icon" className='hidden w-auto h-full py-1 screen600px:block'/>
+            <section className='absolute left-0 w-auto h-full flex justify-center items-center'>
+                <img src="./Logo/logo.png" alt="Arctasoft Logo" className='w-full h-full px-5 py-1 screen600px:h-4/5 screen600px:px-4' />
             </section>
 
             <section className='absolute flex items-center w-auto h-full right-5 screen1000px:hidden'>

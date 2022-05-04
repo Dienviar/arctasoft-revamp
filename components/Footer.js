@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='w-full h-[300px] bg-[rgb(0,128,128,0.1)] flex justify-center items-center'>
         <section>
           <div className='flex items-center justify-center w-full h-auto'>
-            <img src="./Logo/logo.png" alt="Arctasoft Icon" className='w-auto h-full' />
+            <img src="./Logo/icon.png" alt="Arctasoft Icon" className='w-auto h-36' />
           </div>
 
           <div className='flex items-center justify-center w-full h-auto mt-5'>
