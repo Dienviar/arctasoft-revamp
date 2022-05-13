@@ -32,7 +32,7 @@ const AboutUs = () => {
             <article className='flex items-center w-full h-auto mt-10 our-products'>
                 <div className='w-full h-auto bg-[rgb(0,128,128,0.1)] text-justify rounded-xl'>
                     <p className='p-5 text-lg text-black'>
-                        Arctasoft is a software development company that specializes in intuitive, customizable, and easy to use software. We strive to enhance the quality of our clients' business through developed software. We provide a range of web and mobile application development services for companies who need a firm to get their new product idea off the ground and running, and to turn the vision into reality.
+                        Arctasoft is a software development company that specializes in intuitive, customizable, and easy to use software. We strive to enhance the quality of our clients business through developed software. We provide a range of web and mobile application development services for companies who need a firm to get their new product idea off the ground and running, and to turn the vision into reality.
                     </p>
                 </div>
             </article>
