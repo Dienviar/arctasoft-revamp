@@ -77,17 +77,18 @@ const OurProducts = () => {
                 </div>
             </article>
 
-            <article className='flex items-center w-full h-auto mt-10 opacity-0 our-products screen1020px:grid'>
+            <article className='flex items-start w-full h-auto mt-10 opacity-0 our-products screen1020px:grid'>
                 <div className='flex justify-center w-full h-full'>
                     <img src="./Product.png" alt="Laptop" className='h-[400px] screen1020px:w-full screen1020px:h-auto p-3 rounded-md shadow-sm screen1020px:p-0'/>
                 </div>
-                <div className='flex w-full h-full screen1020px:mt-16'>
+                <div className='flex w-full h-full mt-8 screen1020px:mt-16'>
                     <div>
                         <p className='text-3xl font-bold text-pal_green'>
                             Digital Menu
                         </p>
-                        <p className='mt-3 text-base text-black text-justify'>
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                        <p className='mt-3 text-base text-justify text-black'>
+                            Our product helps companies solve complex problems through the creation of highly scalable solutions. We take a holistic approach, using proprietary technology to engage the entire organization and drive change.
+                            We offer a comprehensive range of applications and services. Our solutions are built using the best-in-class technologies. We have a strong commitment to quality, continuous improvement and innovation. We collaborate with our customers to align their business and technology goals.
                         </p>
                     </div>
                 </div>

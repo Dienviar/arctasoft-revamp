@@ -32,10 +32,10 @@ const Testimonial = () => {
             </article>
 
             <div className='screen420px:mt-16'>
-                <TestimonialMessage name="Maria Cruz Santos" position="Co-Chairman and Co-Founder"/>
-                <TestimonialMessage name="Denver Dannel" position="Founder"/>
-                <TestimonialMessage name="Maria Clarise" position="Co-Founder"/>
-                <TestimonialMessage name="Micah Austria" position="President"/>
+                <TestimonialMessage name="Maria Cruz Santos" position="General Manager" company={"Sports Equipment Company, UK"} message={"I am really impressed by the quality of services I received from Arctasoft. You were right on schedule, charged reasonable prices, were professional and courteous in dealings, and delivered items well before time. I have got a good e-commerce site for my products. My revenue has increased because of Arctasoft and I will definitely use your services again."} />
+                <TestimonialMessage name="Collin Roman" position="Spokesperson" company={"Leading System Integrator, EMEA Region"} message={"We thank Arctasoft for the wonderful job in helping us develop our program. Everyone was professional, excellent and hard working. Thanks to them, we were able to achieve our goal on time, and we look forward to continue working with them in the future."}/>
+                <TestimonialMessage name="Christopher Rasmussen" position="Spokesperson" company={"itrueque.com"} message={"We are very happy with Arctasoft; very serious and consistent in their work. Joseph and his team of programmers have always been there for us all the time. This is a company I can recommend to anyone to perform any work."}/>
+                <TestimonialMessage name="Jakobe Mata" position="Directorr" company={"International new-media agency headquartered in Scotland"} message={"Under tight deadlines and with high expectations, Arctasoft was a pleasure to partner with, on a high profile political campaign website. Professional, conscientious and thoroughly competent - I wouldn't hesitate in recommending them to other agencies."}/>
             </div>
         </div>
     </section>
